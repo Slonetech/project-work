@@ -1,5 +1,6 @@
+
 let fruits = []; // Define a variable to hold fruits data
-console.log(fruits)
+// console.log(fruits)
 
 document.addEventListener("DOMContentLoaded", () => {
     getFruits();
@@ -18,24 +19,23 @@ function getFruits() {
 }
 
 // Function to display fruits within the div. 
-function displayFruits(fruits) {
-    const filmContainer = document.querySelector("#fruits");
-
-    fruits.forEach(fruit => {
-        const card = document.createElement("div");
-        card.className = "p-2 m-3 col-3 card";
-        card.innerHTML = `
-            <div class="card-body">
-                <img src="${fruit.image}" class="card-img-top" alt="${fruits.description}">
+function displayFruits(fruits){
+    const fruitContainer = document.querySelector("#items");
+    for(let fruit of fruits){
+        fruitContainer.innerHTML += `
+        <div class="ml-1 my-2 col-4">
+            <div class="card" id= "card">
+                <img src="${fruit.image}" height="250px" class="card-img-top image" alt="...">
+                <div class="card-body">
                 <h5 class="card-title">${fruit.title}</h5>
-                <h6>${fruits.description}</h6>
-                <ul>
-                    <li>Price: ${fruits.price}</li>
-                </ul>
-                <form>
-                    <button class="buy-button">Buy Ticket</button>
-                </form>
+                <p>Sh. ${fruit.price}</p>
+                </div>
             </div>
-        `;
-    });
+        </div>
+        `
+        const btnAddCart= document.createElement("button")
+        const card= document.getElementById("card")
+        btnAddCart.className="btn btn-primary btn-sm btn-block m-4 w-100"
+        card.appendChild(btnAddCart)        
+    }
 }
