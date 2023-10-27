@@ -1,0 +1,65 @@
+{
+    "cars": [
+      {
+        "id": 0,
+        "carImg": "./images/vehicle-1.jpg",
+        "model": "Mercedes Benz convertible",
+        "price": "4 120 000 KES",
+        "details": {
+          "year": "2022",
+          "condition": "new",
+          "transmission": "automatic",
+          "fuel": "petrol",
+          "top_speed": "300km/h"
+        }
+      },
+      {
+        "id": 1,
+        "model": "Nisaan 350Z GTR",
+        "price": "2 000 000 KES",
+        "details": {
+          "year": "2023",
+          "condition": "new",
+          "transmission": "automatic",
+          "fuel": "petrol",
+          "top_speed": "350km/h"
+        }
+      },
+      {
+        "id": 2,
+        "model": "Mazda MX5",
+        "price": "650000 KES",
+        "details": {
+          "year": "2022",
+          "condition": "new",
+          "transmission": "automatic",
+          "fuel": "petrol",
+          "top_speed": "180km/h"
+        }
+      },
+      {
+        "id": 3,
+        "model": "Subaru Impreza",
+        "price": "3 133 000 KES",
+        "details": {
+          "year": "2022",
+          "condition": "new",
+          "transmission": "automatic",
+          "fuel": "petrol",
+          "top_speed": "220km/h"
+        }
+      },
+      {
+        "id": 4,
+        "model": " Rolls Royce Classic",
+        "price": "10 000 000 KES",
+        "details": {
+          "year": "2019",
+          "condition": "new",
+          "transmission": "automatic",
+          "fuel": "petrol",
+          "top_speed": "320km/h"
+        }
+      }
+    ]
+  }  
